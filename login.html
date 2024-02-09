@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title> tela de Login </title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/vetores-gratis/resumo-de-fundo-com-um-desenho-geometrico_1048-5123.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1704326400&semt=ais');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            color: black;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        button {
+            background-color: #9D4EDD;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            width: 75px;
+        }
+
+        h3 {
+            font-size: 25px;
+            color: #9D4EDD;
+        }
+
+        input {
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .login {
+            padding: 50px;
+            background-color: #3C096C;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 35px;
+            width: 300px;
+        }
+    </style>
+   
+
+    <div class="login">
+        <div class="error-message">
+            <!-- Mensagem de erro será inserida aqui -->
+        </div>
+        <form action="/enviar_login" method="post">
+            <h1> Login</h1>
+            <h3> E-mail</h3>
+            <input type="text" name="email" placeholder="digite seu e-mail"></input><br>
+            <h3> Senha</h3>
+            <input type="text" name="senha" placeholder="digite sua senha"> </input><br><br>
+            <button type="submit">Entrar </button><br>
+        </form>
+    </div>
+
+</body>
+
+</html>
