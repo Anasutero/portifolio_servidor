@@ -51,22 +51,24 @@
             border-radius: 35px;
             width: 300px;
         }
-        .error-message{
+        .welcome_message{
             color: #fff;
         }
     </style>
    
 
     <div class="login">
-        <div class="error-message">
-            <!-- Mensagem de erro será inserida aqui -->
+        <div class="welcome_message">
+           {welcome_message}
         </div>
-        <form action="/enviar_login" method="post">
-            <h1> Login</h1>
+        <form action="/confirmar_cadastro" method="post">
+            <h1> Cadastro</h1>
+            <h3> Nome</h3>
+            <input type="text" name="nome" placeholder="digite seu nome"></input><br>
             <h3> E-mail</h3>
-            <input type="text" name="email" placeholder="digite seu e-mail"></input><br>
+            <input type="text" name="email" placeholder="digite seu e-mail" value="{login}"></input><br>
             <h3> Senha</h3>
-            <input type="text" name="senha" placeholder="digite sua senha"> </input><br><br>
+            <input type="text" name="senha" placeholder="digite sua senha" value="{senha}"> </input><br><br>
             <button type="submit">Entrar </button><br>
         </form>
     </div>
